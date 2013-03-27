@@ -23,7 +23,7 @@ Installation
 
 Simply upload all files to a folder with browser access, preferably not on the server you want to monitor.
 
-### Step 2: Account Setup
+### Step 2: API & GAuth Setup
 
 Open config.php with your text editor. Manually add the secret key used for 2-step login.
 Also add the SolusVM API information needed (url, key, hash). 
