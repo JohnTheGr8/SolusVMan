@@ -1,0 +1,186 @@
+body{
+  padding-top: 40px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration:none;
+}
+
+ul, li {
+  list-style-type: none; 
+  margin: 0px; 
+  padding: 0px; 
+} 
+
+input{
+  font-family:arial;
+  line-height:14px;
+}
+
+label{
+  margin:0 0 12px;
+}
+
+/* Login - Config */
+
+#login{
+  width:400px;
+  margin:20% 300px;
+}
+
+#config, #login {
+  width:250px;
+  float: none;
+  display:block;
+  margin: 10% auto 0 auto;  
+}
+
+#config_status{
+  float:left;
+  width:400px;
+  margin:0 0 15px;
+  color:#FF0000;
+  font-style:italic;
+}
+
+#config input, #login input{
+  padding: 10px;
+  display: block;
+  width: 100%;
+  border: 1px solid #C5C3BD;
+  margin-top: -3px;
+  text-align:center;
+  color: #999;
+  font-weight: bold;  
+}
+
+#config input:focus, #login input:focus{
+  outline:none;
+  color: #D95533;
+}
+
+.setup_button, .login_button{
+  background:-moz-linear-gradient(top, #f5f5f5, #e9e9e9); /* Firefox */
+  background:-webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e9e9e9)); /* Safari, Chrome */
+  background:-webkit-linear-gradient(top, #f5f5f5, #e9e9e9); /* Safari, Chrome - neue Syntax! */
+  background:-o-linear-gradient(top, #f5f5f5, #e9e9e9); /* Opera */
+  background:-ms-linear-gradient(top, #f5f5f5, #e9e9e9); /* IE */
+  background:linear-gradient(top, #f5f5f5, #e9e9e9); /* W3C Standard */
+  border:1px solid #b0b0b0;
+  background:#f7f7f7;
+  
+  height:50px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.setup_button:hover, .login_button:hover{
+  background-color: #D95533;
+  color:#fafafa !important;
+  font-weight: bold;
+}
+
+.error_msg{
+  color:#D95533;
+  text-align:center;
+  display:block;
+  font-weight:bold;
+}
+
+/*  Server Status and Actions  */
+
+#server_info{
+  -webkit-font-smoothing: antialiased;
+  font: 13px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#server_name{
+  font-weight:bold;
+  font-size: 18pt;
+    
+}
+
+.server_ip{
+  font-style: italic;
+  display:block;
+  font-size: 10pt;
+  margin-top:2px;
+  color: #727272;
+}
+
+.online, .normal{
+  color: #339966;
+  font-weight:bold;
+}
+
+.offline{
+  color: #525252;
+  font-weight:bold;
+}
+
+.warning{
+  color: #f29d50;   
+  font-weight:bold;
+}
+
+.attention{
+  color: #cc3300;
+  font-weight:bold;
+}
+
+.info{
+  display:block;
+  float:left;
+  width: 80%;
+  color: #727272;
+}
+
+.info_value{
+  float:right;
+  display:inline-block;
+  margin-right:0;
+}
+
+#server_status{
+  clear:both;
+  width:100%;
+  display:block;    
+
+  padding: 8px 0px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  position: relative;
+
+}
+
+#server_status.good{
+  background: #eaf4ef;
+  border-color: #99ccb2;
+  color:#194d33;  
+  text-align:center;
+  font-weight:bold;
+}
+
+#server_status.prob{
+  background: #f9eae5;
+  border-color: #e5997f;
+  color:#661a00;  
+  text-align:center;
+  font-weight:bold;
+}
+
+.action{   
+  margin-top:10px;
+  width:33%;
+  text-align:center;
+  float:left;  
+  color: #525252;
+  font-weight:bold;
+}
+
+#boot, #shutdown{
+  display:inline-block;
+}
